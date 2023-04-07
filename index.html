@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job History</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
+</head>
+<body class="container">
+    <br>
+    <div class="card bg-dark text-white">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="hire-date">Hire Date</label>
+                        <input type="date" class="form-control" id="hire-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="end-date">End Date</label>
+                        <input type="date" class="form-control" id="end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+             <div class="col-sm">
+                <div class="form-group">
+                    <label for="new-job">Job</label>
+                    <input type="text" class="form-control" id="new-job" placeholder="Job">
+                </div>
+             </div>
+            </div>
+            <button id="add" class="btn btn-light form-control">Create</button>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Job</th>
+            <th>Date Added</th>
+            <th>Hire Date</th>
+            <th>End Date</th>
+            <th>Remove Job</th>
+        </tr>
+    </table>
+    <script src="assignments.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
