@@ -15,7 +15,7 @@ document.getElementById('add').addEventListener('click', () => {
         alert('Please enter a hire date.');
         return;
     }
-// create alert to provide information into end date input field
+// create alert to provide information into end input field
     if (endDateInput.value === '') {
         alert('Please enter an end date.');
         return;
